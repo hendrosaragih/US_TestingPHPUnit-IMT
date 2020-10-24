@@ -248,14 +248,16 @@ class CalculatorTests extends TestCase
 
     public function testdebit39()
         {
-            $result = $this->calculator->debit(45, 5);
-            $this->assertEquals(9, $result);
+            $result = $this->calculator->debit(44, 5);
+            $this->assertEquals(8.8, $result);
+            // BVA : 7.9 > 8 > 8.8
         }
 
     public function testdebit40()
         {
-            $result = $this->calculator->debit(50, 5);
-            $this->assertEquals(10, $result);
+            $result = $this->calculator->debit(53, 5);
+            $this->assertEquals(10.6, $result);
+            // BVA : 9.9 > 10 > 10.6
         }
 
 
